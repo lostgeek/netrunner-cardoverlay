@@ -20,6 +20,15 @@ div.cardclose{
     height: 40px;
     width: 100%;
 }
+div.footer{
+    text-align: left;
+    position:absolute;
+    left: 1%;
+    bottom:1%;
+}
+div.footer,a{
+    color: white;
+}
 img, input{
     width:100%;
 }
