@@ -1,0 +1,26 @@
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+?>
+<html>
+<head>
+<title>Netrunner Card Overlay</title>
+<meta charset="utf-8"/>
+<script src="./fuse.min.js"></script>
+<script src="./jquery-3.3.1.min.js"></script>
+<script src="./jquery-ui.min.js"></script>
+<link rel="stylesheet" href="./jquery-ui.min.css">
+<link rel="stylesheet" href="./jquery-ui.structure.min.css">
+<link rel="stylesheet" href="./jquery-ui.theme.min.css">
+<link rel="stylesheet" href="./overlay.css">
+</head>
+<body>
+<div class='cardinterface'>
+    <div class='cardimage'><img id="cardimage" src="https://netrunnerdb.com/card_image/02049.png" /></div>
+    <div class='cardname'><input type="text" id="cardname" name="cardname" value="" autocomplete="off" /> </div>
+    <div class='cardclose'><input type="button" id="cardclose" value="Close" /> </div>
+</div>
+<script src="./overlay.js"></script>
+</body>
+</html>
+

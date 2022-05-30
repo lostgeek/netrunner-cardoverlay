@@ -1,0 +1,32 @@
+body {
+    text-align: right;
+    margin:0;
+}
+div.cardinterface{
+    width: 300px;
+    float:right;
+}
+div.cardimage{
+    height: 418px;
+    width: 100%;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+div.cardname{
+    height: 40px;
+    width: 100%;
+}
+div.cardclose{
+    height: 40px;
+    width: 100%;
+}
+img, input{
+    width:100%;
+}
+input{
+    height:40px;
+}
+
+body{
+    background: #f0f;
+}
