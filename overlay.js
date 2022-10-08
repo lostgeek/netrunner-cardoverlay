@@ -9,7 +9,7 @@ $('#cardname').change(function() {
     if(result[0].image_url) {
         imageurl = result[0].image_url;
     } else {
-        imageurl = "https://netrunnerdb.com/card_image/"+result[0].code+".png"
+        imageurl = template.replace("{code}",result[0].code);
     }
     var img = $('<img>');
     img.on('load', function() {
@@ -28,6 +28,8 @@ $(document).click(function() {
     $('#cardname').focus();
 });
 
+template = "";
+
 var cards = (function () {
     var json = null;
     $.ajax({
@@ -39,6 +41,7 @@ var cards = (function () {
             json = data;
         }
     });
+    template = json.imageUrlTemplate;
     return json;
 })();
 

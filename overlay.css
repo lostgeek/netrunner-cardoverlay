@@ -12,6 +12,9 @@ div.cardimage{
     margin-bottom:20px;
     margin-top:20px;
 }
+div.cardimage img{
+    border-radius:15px;
+}
 div.cardname{
     height: 40px;
     width: 100%;
